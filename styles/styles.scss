@@ -1,0 +1,76 @@
+$color1: #80c8bc; /*verde suave*/
+$color2: #5ec0ca; /*celeste claro */
+$color3: #6287a2; /* Azul oscuro */
+$color4: #efd199; /* Naranja claro */
+
+.color1 {
+    color: $color1;
+}
+
+.color2 {
+    color: $color2;
+}
+
+.color3 {
+    color: $color3;
+}
+
+.color4 {
+    color: $color4;
+}
+
+.bg-color1 {
+    background-color: $color1;
+}
+
+.bg-color2 {
+    background-color: $color2;
+}
+
+.bg-color3 {
+    background-color: $color3;
+}
+
+.bg-color4 {
+    background-color: $color4;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
