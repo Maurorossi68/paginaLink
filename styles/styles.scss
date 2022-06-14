@@ -1,7 +1,7 @@
-$color1: #80c8bc; /*verde suave*/
-$color2: #5ec0ca; /*celeste claro */
-$color3: #6287a2; /* Azul oscuro */
-$color4: #efd199; /* Naranja claro */
+$color1: #6F7239; /*verde suave*/
+$color2: #E7E8E3; /*celeste claro */
+$color3: #DFE27C; /* Azul oscuro */
+$color4: #A2B6B5; /* Naranja claro */
 
 .color1 {
     color: $color1;
@@ -50,11 +50,14 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  height: 100;
+  line-height: 20px; /* Vertically center the text there */
+  background-color: $color1;
 }
 
+.card{
+  background-color: $color2;
+}
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -63,7 +66,7 @@ body {
 body > .container {
   padding: 60px 15px 0;
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .footer > .container {
