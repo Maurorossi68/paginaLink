@@ -1,0 +1,13 @@
+<div class="row mb-2">
+    <div *ngFor="let producto of parProductos" class="col-md-6">
+        <div class="card" >
+            <img src="/assets/noImage.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{producto?.descripcion}}</h5>
+                <p class="card-text"><b> $ {{producto?.precio}} </b> Stock: {{producto?.stock}}</p>
+                <a href="unProducto.html" class="stretched-link"></a>
+            </div>
+            
+        </div>
+    </div>
+</div>

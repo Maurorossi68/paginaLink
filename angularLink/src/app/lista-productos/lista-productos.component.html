@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a routerLink="">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a routerLink="/productos">Productos</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col col-md-4">
+            <table class="table">
+                <thead>
+                    <tr scope="col">
+                        <h3>Ordenar</h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A-Z</td>
+                    </tr>
+                    <tr>
+                        <td>Mas reciente</td>
+                    </tr>
+                    <tr>
+                        <td>Menor precio</td>
+                    </tr>
+                    <tr>
+                        <td>Mayor precio</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button routerLink="/nuevoProducto" class="btn btn-primary" style="size:16px">Agregar Nuevo Producto</button>
+        </div>
+        <div class="col-md-8 lista text-center">
+            <app-elementos *ngFor="let parProductos of listaProductos" [parProductos]="parProductos"></app-elementos>
+            <button class="btn btn-primary botonNavegador" (click)="traerProductosAnt()"><</button>
+            <button class="btn btn-primary botonNavegador" (click)="traerProductos()">></button>
+        </div>
+    </div>
+</div>
