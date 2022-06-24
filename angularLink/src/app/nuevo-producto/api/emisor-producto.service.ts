@@ -24,4 +24,12 @@ export class EmisorProductoService {
         stock: unProducto.stock
       }).subscribe();
   }
+
+  putProducto(nuevoProducto: Producto) {
+    this.http.put(this.URL+/productos/+nuevoProducto.idprod, {
+      descripcion: nuevoProducto.descripcion,
+      precio: nuevoProducto.precio,
+      stock: nuevoProducto.stock
+    }).subscribe();
+  }
 }

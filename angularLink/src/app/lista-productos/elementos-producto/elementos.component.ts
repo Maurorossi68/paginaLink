@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Producto } from 'src/app/generales/interfacesAPI/Producto';
 import { SolicitanteProductosService } from './api/solicitante-productos.service';
 
@@ -12,7 +13,8 @@ export class ElementosComponent implements OnInit {
   @Input() parProductos: Producto[];
 
   constructor(
-    private soliApiProductos:SolicitanteProductosService
+    private soliApiProductos:SolicitanteProductosService,
+    private router: Router
   ) {
     this.parProductos=[];
    }
@@ -20,4 +22,7 @@ export class ElementosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  abrirProducto(unProducto:Producto){
+    this.router.navigate(['/articulo',unProducto.idprod]);
+  }
 }

@@ -5,9 +5,8 @@
             <div class="card-body">
                 <h5 class="card-title">{{producto?.descripcion}}</h5>
                 <p class="card-text"><b> $ {{producto?.precio}} </b> Stock: {{producto?.stock}}</p>
-                <a href="unProducto.html" class="stretched-link"></a>
+                <a [routerLink]="['/articulo', producto?.descripcion]" class="stretched-link"></a>
             </div>
-            
         </div>
     </div>
 </div>

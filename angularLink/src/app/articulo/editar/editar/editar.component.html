@@ -1,0 +1,24 @@
+<div class="container formulario">
+    <div class="row justify-content-center">
+        <div class="col align-center">
+            <h2>Editar Producto</h2>
+            <form [formGroup]="formulario!" (ngSubmit)="subir()">
+                <div>
+                    <label for="">Descripcion: </label>
+                    <input type="text" formControlName="descripcion">
+                </div>
+                <div>
+                    <label for="">Precio: </label>
+                    <input type="number" formControlName="precio">
+                </div>
+                <div>
+                    <label for="">Stock: </label>
+                    <input type="number" formControlName="stock">
+                </div>
+                <div>
+                    <button class="btn btn-primary" type="submit">Subir Producto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

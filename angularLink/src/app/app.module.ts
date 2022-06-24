@@ -11,6 +11,7 @@ import { ArticuloComponent } from './articulo/articulo.component';
 import { ListaProductosModule } from './lista-productos/lista-productos.module';
 import { NuevoProductoComponent } from './nuevo-producto/nuevo-producto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditarComponent } from './articulo/editar/editar/editar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     ArticuloComponent,
     NuevoProductoComponent,
+    EditarComponent,
   ],
   imports: [
     BrowserModule,

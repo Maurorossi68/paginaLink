@@ -1,6 +1,7 @@
 import { Links } from "./Links";
 
 export interface Producto {
+    idprod:number;
     descripcion: String;
     precio: number;
     stock:number;
